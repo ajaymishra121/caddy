@@ -1,0 +1,16 @@
+:80 {
+  root /var/www/caddy.linuxworld.info
+  gzip {
+      ext .html .htm .php
+      level 6
+  }
+}
+caddy.linuxworld.info {
+    root /var/www/caddy.linuxworld.info
+}
+
+caddy1.linuxworld.info {
+    root /var/www/caddy.linuxworld.info
+    gzip
+    log ../access.log
+}
